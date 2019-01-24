@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.GroupCreationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-23T09:57:02" hostname="ws129" time="7.449">
+  <properties/>
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="4.522"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stqa.pft.addressbook.tests.GroupCreationTests" time="2.927"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

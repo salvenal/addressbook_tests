@@ -1,0 +1,52 @@
+<list>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 0</lastname>
+    <firstname>firstname 0</firstname>
+    <address>address 0</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 1</lastname>
+    <firstname>firstname 1</firstname>
+    <address>address 1</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 2</lastname>
+    <firstname>firstname 2</firstname>
+    <address>address 2</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 3</lastname>
+    <firstname>firstname 3</firstname>
+    <address>address 3</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 4</lastname>
+    <firstname>firstname 4</firstname>
+    <address>address 4</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 5</lastname>
+    <firstname>firstname 5</firstname>
+    <address>address 5</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 6</lastname>
+    <firstname>firstname 6</firstname>
+    <address>address 6</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 7</lastname>
+    <firstname>firstname 7</firstname>
+    <address>address 7</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 8</lastname>
+    <firstname>firstname 8</firstname>
+    <address>address 8</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+  <ru.stqa.pft.addressbook.model.ContactData>
+    <lastname>lastname 9</lastname>
+    <firstname>firstname 9</firstname>
+    <address>address 9</address>
+  </ru.stqa.pft.addressbook.model.ContactData>
+</list>
