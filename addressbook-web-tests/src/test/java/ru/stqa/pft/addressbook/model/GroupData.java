@@ -3,16 +3,42 @@ package ru.stqa.pft.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.security.acl.Group;
 import java.util.Objects;
 @XStreamAlias("group")
+@Entity
+@Table(name = "group_list")
 
 public class GroupData {
   @XStreamOmitField
-
-
+  @Id
+  @Column(name="group_id")
   private int id = Integer.MAX_VALUE;
+  @Expose
+  @Column(name="group_name")
+  private String name;
+  @Expose
+  @Type(type="text")
+  @Column(name="group_header")
+  private String header;
+  @Expose
+  @Column(name="group_footer")
+  @Type(type="text")
+  private String footer;
+
+  @Override
+  public String toString() {
+    return "GroupData{" +
+            "id='" + id + '\'' +
+            ", name='" + name + '\'' +
+            '}';
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -27,20 +53,6 @@ public class GroupData {
   public int hashCode() {
 
     return Objects.hash(id, name);
-  }
-  @Expose
-  private String name;
-  @Expose
-  private String header;
-  @Expose
-  private String footer;
-
-  @Override
-  public String toString() {
-    return "GroupData{" +
-            "id='" + id + '\'' +
-            ", name='" + name + '\'' +
-            '}';
   }
 
   public int getId() {
