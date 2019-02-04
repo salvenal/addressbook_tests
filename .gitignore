@@ -1,5 +1,5 @@
 .gradle
-.class
+*.class
 /build/
 
 # Ignore Gradle GUI config
