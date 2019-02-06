@@ -5,7 +5,9 @@ import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 
 @Entity
@@ -42,8 +44,7 @@ public class ContactData {
   @Column(name = "email3")
   @Type(type = "text")
   private String email3;
-  @Transient
-  private String group;
+
   @Expose
   @Column(name = "home")
   @Type(type = "text")
@@ -61,6 +62,11 @@ public class ContactData {
   @Column(name = "photo")
   @Type(type = "text")
   private String photo;
+
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(name = "address_in_groups",
+          joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+  private Set<GroupData> groups = new HashSet<GroupData>();
 
   public File getPhoto() {
     if (photo != null) {
@@ -115,9 +121,7 @@ public class ContactData {
     return email3;
   }
 
-  public String getGroup() {
-    return group;
-  }
+
 
   public String getHomePhone() {
     return homePhone;
@@ -180,10 +184,7 @@ public class ContactData {
 
 
 
-  public ContactData withGroup(String group) {
-    this.group = group;
-    return this;
-  }
+
 
   public ContactData withWorkPhone(String workPhone) {
     this.workPhone = workPhone;
@@ -213,9 +214,7 @@ public class ContactData {
     this.email3 = email3;
     return this;
   }
-  public void setGroup(String group) {
-    this.group = group;
-  }
+
 
   @Override
   public boolean equals(Object o) {
@@ -254,6 +253,7 @@ public class ContactData {
     return this;
   }
 
-
-
+  public Groups getGroups() {
+    return new Groups(groups);
+  }
 }

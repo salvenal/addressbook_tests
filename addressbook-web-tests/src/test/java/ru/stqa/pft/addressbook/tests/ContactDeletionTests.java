@@ -32,6 +32,7 @@ public class ContactDeletionTests extends TestBase {
     assertThat(after, equalTo(before.without(deletedContact)));
 
 
+
   }
 
 
