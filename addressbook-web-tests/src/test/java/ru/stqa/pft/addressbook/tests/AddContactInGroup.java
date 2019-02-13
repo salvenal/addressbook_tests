@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.*;
+import ru.stqa.pft.addressbook.model.AddressInGroupData;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -35,6 +36,8 @@ public class AddContactInGroup extends TestBase {
     app.goTo().contactPage();
     app.contact().addGroupInContact(modifiedContact, group.getId());
     AddressInGroups addressInGroupsAfter = app.db().addressInGroups();
+    System.out.println(addressInGroupsAfter);
+    System.out.println(addressInGroupsBefore.withAdded(addedAddressInGroup));
     assertThat(addressInGroupsAfter, equalTo(addressInGroupsBefore.withAdded(addedAddressInGroup)));
 
   }

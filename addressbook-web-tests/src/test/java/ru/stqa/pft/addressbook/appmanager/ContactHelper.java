@@ -193,7 +193,7 @@ public class ContactHelper extends HelperBase {
       String groupIdString = Integer.toString(groupId);
       select.selectByValue(groupIdString);
       selectContactById(contact.getId());
-      click(By.xpath("//input[@value='Delete']"));
+      click(By.name("remove"));
       contactCache = null;
 
     }

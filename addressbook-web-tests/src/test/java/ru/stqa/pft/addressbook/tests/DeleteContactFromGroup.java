@@ -1,8 +1,10 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.hamcrest.CoreMatchers;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.*;
+
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -39,7 +41,9 @@ public class DeleteContactFromGroup extends TestBase {
     AddressInGroups addressInGroupsBefore = app.db().addressInGroups();
     app.contact().deleteContactFromGroup(deletedContact, group.getId());
     AddressInGroups addressInGroupsAfter = app.db().addressInGroups();
-    assertThat(addressInGroupsAfter, equalTo(addressInGroupsBefore.withAdded(deletedAddressInGroup)));
+    System.out.println(addressInGroupsAfter);
+    System.out.println(addressInGroupsBefore.without(deletedAddressInGroup));
+    assertThat(addressInGroupsAfter, equalTo(addressInGroupsBefore.without(deletedAddressInGroup)));
 
   }
 
