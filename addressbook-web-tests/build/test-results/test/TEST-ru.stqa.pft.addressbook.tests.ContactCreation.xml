@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stqa.pft.addressbook.tests.ContactCreation" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-01-23T09:56:23" hostname="ws129" time="20.154">
-  <properties/>
-  <testcase name="testContactCreation[0](ContactData{id=2147483647, lastname='lastname 0', firstname='firstname 0'})" classname="ru.stqa.pft.addressbook.tests.ContactCreation" time="12.635"/>
-  <testcase name="testContactCreation[1](ContactData{id=2147483647, lastname='lastname 1', firstname='firstname 1'})" classname="ru.stqa.pft.addressbook.tests.ContactCreation" time="7.513"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
