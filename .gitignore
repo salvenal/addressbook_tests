@@ -1,3 +1,9 @@
+.idea/
+*/.idea/
+*/.gradle/
+*/out/
+*/build/
+*.log
 .gradle
 *.class
 /build/
