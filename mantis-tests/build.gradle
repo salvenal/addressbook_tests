@@ -18,6 +18,12 @@ dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.7'
     compile 'commons-net:commons-net:3.4'
+    compile 'org.subethamail:subethasmtp:3.1.7'
+    compile 'ru.lanwen.verbalregex:java-verbal-expressions:1.6'
+    compile 'com.hynnet:logback-classic:1.1.3'
+
+    
+    
 
 
 }
