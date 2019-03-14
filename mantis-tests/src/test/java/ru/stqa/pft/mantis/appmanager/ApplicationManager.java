@@ -23,6 +23,8 @@ public class ApplicationManager {
   private RegistrationHelper registrationHelper;
   private FtpHelper ftp;
   private MailHelper mailHelper;
+  private JamesHelper jamesHelper;
+  private AdministratorHelper adminitratorHelper;
 
 
   public ApplicationManager(String browser) {
@@ -66,7 +68,6 @@ public class ApplicationManager {
     return ftp;
   }
 
-
   public WebDriver getDriver() {
     if (wd == null) {
       if (browser.equals(BrowserType.FIREFOX)) {
@@ -90,5 +91,19 @@ public class ApplicationManager {
       mailHelper = new MailHelper(this);
     }
     return mailHelper;
+  }
+
+  public JamesHelper james() {
+    if (jamesHelper == null) {
+      jamesHelper = new JamesHelper(this);
+    }
+    return jamesHelper;
+  }
+
+  public AdministratorHelper administratorHelper() {
+    if (adminitratorHelper == null) {
+      adminitratorHelper = new AdministratorHelper(this);
+    }
+    return adminitratorHelper;
   }
 }
