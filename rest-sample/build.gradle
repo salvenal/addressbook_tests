@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile  group: 'org.testng', name: 'testng', version: '6.0'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'org.apache.httpcomponents:httpclient:4.5.7'
+    compile 'org.apache.httpcomponents:fluent-hc:4.5.7'
+}
+  
