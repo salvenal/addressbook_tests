@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile  group: 'org.testng', name: 'testng', version: '6.0'
+    compile 'com.jcabi:jcabi-github:1.0'
+}
+  
