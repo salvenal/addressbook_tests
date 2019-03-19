@@ -43,7 +43,6 @@ public class ApplicationManager {
     dbHelper = new DbHelper();
 
     if("".equals(properties.getProperty("selenium.server"))) {
-
       if (browser.equals(BrowserType.FIREFOX)) {
         wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("/home/user/Desktop/firefox/firefox"));
       } else if (browser.equals(BrowserType.CHROME)) {
