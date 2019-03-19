@@ -41,8 +41,7 @@ public class ApplicationManager {
     if (browser.equals(BrowserType.FIREFOX)) {
       wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("/home/user/Desktop/firefox/firefox"));
     } else if (browser.equals(BrowserType.CHROME)) {
-      System.setProperty("webdriver.chrome.driver","/usr/lib/chromium-browser/chromedriver");
-      wd = new ChromeDriver();
+	  wd = new ChromeDriver();
     } else if (browser.equals(BrowserType.IE)) {
       wd = new InternetExplorerDriver();
     } else if (browser.equals(BrowserType.OPERA)) {
